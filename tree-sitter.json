@@ -1,0 +1,38 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "alias",
+      "camelcase": "Alias",
+      "title": "Alias",
+      "scope": "source.alias",
+      "file-types": [
+        "alias"
+      ],
+      "injection-regex": "^alias$",
+      "class-name": "TreeSitterAlias"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Alias grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Igor Parfenov"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/ParfenovIgor/tree-sitter-alias"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
